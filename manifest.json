@@ -1,0 +1,29 @@
+{
+
+    "manifest_version": 2,
+    "name": "Stream Boiler",
+    "version": "1.0",
+  
+    "description": "Display the carbon footprint of video streaming",
+  
+    "icons": {
+      "48": "icons/boiler-48.png"
+    },
+
+    "permissions": [
+        "webRequest",
+        "<all_urls>"
+      ],
+    
+      "browser_action": {
+        "default_icon": "icons/boiler-32.png",
+        "default_title": "Stream Boiler",
+        "default_popup": "popup/popup.html"
+      },
+
+      "content_scripts": [{
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["background.js"]
+      }]
+
+    }

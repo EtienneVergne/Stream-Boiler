@@ -1,0 +1,13 @@
+.display {
+    display:flex;
+    justify-content:space-between;
+  }
+  
+  h1 {
+    color:blue;
+  }
+  
+  h2 {
+    color:red;
+  }
+  
